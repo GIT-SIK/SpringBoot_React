@@ -25,7 +25,6 @@ public class IndexController {
     public List<IndexEntity> MybatisValue(){
         List<IndexEntity> listIndex = indexDao.listIndex();
         System.out.println(Arrays.asList(listIndex));
-        System.out.println(listIndex);
         return listIndex;
     }
 }
