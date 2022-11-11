@@ -1,7 +1,6 @@
 ### Spring_Study Default###
 note
-Memo.txt
-
+yarn.lock
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
