@@ -12,10 +12,12 @@ http-proxy-middleware
    - Schema Name : defdb
    - Table Name : view
    - Columns
+     int num; (Primary key)
      boolean hide_1
      boolean hide_2
      boolean hide_3
      date date_1
+     varchar(100) data_1;
 
 
 @ 공부
@@ -23,7 +25,7 @@ http-proxy-middleware
 -> Controller 설정한 @RequestMapping("")로 접근시 LIST 출력 ( 리액트 사용 X 
 
 2. SpringBoot + React
--> 3000 Port <-> 9090 Port
+-> 3002 Port <-> 9090 Port
 -> BACK : Controller GetMapping 요청에 ResponseBody을 통해 값 전달함.
 -> FRONT : APP.js 에서 axios에서 값을 가져와 출력
 
