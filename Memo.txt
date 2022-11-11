@@ -26,6 +26,8 @@ http-proxy-middleware
 
 2. SpringBoot + React
 -> 3002 Port <-> 9090 Port
+   ( node_modules/react-scripts/scripts/start.js : 3002 )
+   ( Package.json scripts -> start : export PORT=3002
 -> BACK : Controller GetMapping 요청에 ResponseBody을 통해 값 전달함.
 -> FRONT : APP.js 에서 axios에서 값을 가져와 출력
 
