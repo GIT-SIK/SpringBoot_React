@@ -10,5 +10,6 @@ import java.util.List;
 public interface IndexDao {
     public IndexEntity indexEntity();
 
+    /* Entity -> List<Entity> */
     public List<IndexEntity> listIndex();
 }
