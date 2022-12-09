@@ -12,4 +12,6 @@ public interface IndexDao {
 
     /* Entity -> List<Entity> */
     public List<IndexEntity> listIndex();
+
+    public int listDelete(int num);
 }

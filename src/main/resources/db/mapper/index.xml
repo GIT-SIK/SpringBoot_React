@@ -9,4 +9,9 @@
     <select id="listIndex" resultType="dev.scheincomp.mybatis.vo.IndexEntity">
         select num, hide_1, hide_2, hide_3, date_1, data_1 from view
     </select>
+
+
+    <delete id="listDelete">
+        delete from view where num = #{num}
+    </delete>
 </mapper>

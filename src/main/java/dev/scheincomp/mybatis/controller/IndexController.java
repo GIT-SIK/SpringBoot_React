@@ -22,9 +22,15 @@ public class IndexController {
 
     @GetMapping ("/api/data")
     @ResponseBody
-    public List<IndexEntity> MybatisValue(){
+    public List<IndexEntity> IndexValue(){
         List<IndexEntity> listIndex = indexDao.listIndex();
         System.out.println(Arrays.asList(listIndex));
         return listIndex;
+    }
+
+    @GetMapping ("/api/indexDelete")
+    @ResponseBody
+    public void IndexDelete(){
+        indexDao.listDelete(1);
     }
 }
