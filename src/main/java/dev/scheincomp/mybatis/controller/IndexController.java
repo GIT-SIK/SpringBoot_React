@@ -28,12 +28,22 @@ public class IndexController {
         return listIndex;
     }
 
+    /* Index Delete -> 지정값 Num값 삭제 / 성공여부 리턴없음 */
     @GetMapping ("/api/indexDelete")
     @ResponseBody
     public void IndexDelete(){
-        indexDao.listDelete(1);
+        int tempListNum = 8;
+        int temp = indexDao.listDelete(tempListNum);
+        if(temp == 1){
+            System.out.println( tempListNum + " 값 삭제성공");
+
+        }
+        else {
+            System.out.println( tempListNum + " 값 삭제실패");
+        }
     }
 
+    /* Index Insert -> Num은 (자동) 숫자 / 날짜는 (자동) 오늘날짜 */
     @GetMapping ("/api/indexInsert")
     @ResponseBody
     public void IndexInsert(){
