@@ -14,4 +14,9 @@
     <delete id="listDelete">
         delete from view where num = #{num}
     </delete>
+
+    <insert id="listInsert" parameterType="dev.scheincomp.mybatis.vo.IndexEntity">
+        INSERT INTO view(hide_1, hide_2, hide_3, data_1, date_1)
+        VALUES (#{hide_1}, #{hide_2}, #{hide_3}, #{data_1},now())
+    </insert>
 </mapper>

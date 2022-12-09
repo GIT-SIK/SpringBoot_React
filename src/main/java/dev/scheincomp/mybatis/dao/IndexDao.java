@@ -14,4 +14,5 @@ public interface IndexDao {
     public List<IndexEntity> listIndex();
 
     public int listDelete(int num);
+    public int listInsert(IndexEntity ie);
 }

@@ -33,4 +33,19 @@ public class IndexController {
     public void IndexDelete(){
         indexDao.listDelete(1);
     }
+
+    @GetMapping ("/api/indexInsert")
+    @ResponseBody
+    public void IndexInsert(){
+
+        IndexEntity ie = new IndexEntity();
+        ie.setHide_1(false);
+        ie.setHide_2(false);
+        ie.setHide_3(false);
+        ie.setData_1("NumberT");
+
+
+        indexDao.listInsert(ie);
+    }
+
 }
