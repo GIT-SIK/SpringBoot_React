@@ -58,4 +58,10 @@ public class IndexController {
         indexDao.listInsert(ie);
     }
 
+    @GetMapping("/api/indexUpdate")
+    @ResponseBody
+    public void IndexUpdate(){
+        indexDao.listUpdate(4, "ReNum");
+    }
+
 }

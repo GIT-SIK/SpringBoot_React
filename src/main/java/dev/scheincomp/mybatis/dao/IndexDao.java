@@ -15,4 +15,6 @@ public interface IndexDao {
 
     public int listDelete(int num);
     public int listInsert(IndexEntity ie);
+
+    public int listUpdate(int num, String data_1);
 }

@@ -23,4 +23,10 @@
         VALUES (#{hide_1}, #{hide_2}, #{hide_3}, #{data_1},now())
     </insert>
 
+
+    <update id="listUpdate" parameterType="dev.scheincomp.mybatis.vo.IndexEntity">
+        UPDATE view
+        SET data_1 =#{data_1}
+        WHERE num = #{num}
+    </update>
 </mapper>
