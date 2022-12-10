@@ -2,7 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybaits.org/dtd/mybatis-3-mapper.dtd">
-
+<!-- xml내 namespace설정은 한개만 가능하다. -->
+<!-- ******************************* -->
 <mapper namespace="dev.scheincomp.mybatis.dao.IndexDao">
     <!-- id : IndexDao에 있는 메소드인 listIndex와 매핑 -->
     <!-- resultType : 어떤 엔티티로 받을 것인지? 반환타입/ vo로 작성한 IndexEntity -->
@@ -24,7 +25,7 @@
         VALUES (#{hide_1}, #{hide_2}, #{hide_3}, #{data_1},now())
     </insert>
 
-
+    <!-- IndexDao.java -> listUpdate -->
     <update id="listUpdate" parameterType="dev.scheincomp.mybatis.vo.IndexEntity">
         UPDATE view
         SET data_1 =#{data_1}
